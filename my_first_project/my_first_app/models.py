@@ -4,3 +4,7 @@ from django.db import models
 class Car(models.Model):
     title = models.TextField(max_length=250)
     year = models.IntegerField(max_length=4, null=True)
+    colors = models.TextField(max_length=250, null=True)
+
+    def __str__(self):
+        return f"{self.title} - {self.year}"
