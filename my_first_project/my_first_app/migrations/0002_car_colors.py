@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='car',
-            name='colors',
+            name='colors',  
             field=models.TextField(max_length=250, null=True),
         ),
     ]
