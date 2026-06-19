@@ -9,7 +9,6 @@ class Product(models.Model):
     photo = models.ImageField(upload_to="logos", null=True, blank=True, verbose_name="Foto")
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
     stock = models.IntegerField(default=0, verbose_name="Stock")
-    
+
     def __str__(self):
         return self.name
-    
