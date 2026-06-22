@@ -11,4 +11,4 @@ class Product(models.Model):
     stock = models.IntegerField(default=0, verbose_name="Stock")
 
     def __str__(self):
-        return self.name
+        return self.name 
